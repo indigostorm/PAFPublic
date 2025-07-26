@@ -23,7 +23,7 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://render-rkgi.onrender.com/${id}`);
+      await axios.delete(`https://render-rkgi.onrender.com/books/${id}`);
       window.location.reload()
     } catch (err) {
       console.log(err);
